@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+//Question 1
+for (let i = 2; i <= 100; i += 2) {
+    console.log(i);
+}
+
+//Question 2
+function calculate(num1, num2, operation) {
+    switch (operation) {
+        case "add":
+            return num1 + num2;
+        case "subtract":
+            return num1 - num2;
+        case "multiply":
+            return num1 * num2;
+        case "divide":
+            return num2 !== 0 ? num1 / num2 : "Cannot divide by zero";
+        default:
+            return "Invalid operation";
+    }
+}
+
+console.log(calculate(5,2,"multiply"));
+
+//Question 3
+function findTax(salary) {
+    let taxRate;
+    switch (true) {
+        case (salary > 0 && salary <= 500000):
+            taxRate = 0;
+            break;
+        case (salary > 500000 && salary <= 1000000):
+            taxRate = 0.10;
+            break;
+        case (salary > 1000000 && salary <= 1500000):
+            taxRate = 0.20;
+            break;
+        case (salary > 1500000):
+            taxRate = 0.30;
+            break;
+        default:
+            return "Invalid salary amount";
+    }
+    return salary * taxRate;
+}
+
+console.log("Tax = "+findTax(750000));
+
+//Question 4
+function sumOfProducts(n1, n2) {
+    let sum = 0;
+    while (n1 > 0 && n2 > 0) {
+        sum += (n1 % 10) * (n2 % 10);
+        n1 = Math.floor(n1 / 10);
+        n2 = Math.floor(n2 / 10);
+    }
+    return sum;
+}
+console.log(Sum = + sumOfProducts(952,35));
+
+</script>
+</html>
