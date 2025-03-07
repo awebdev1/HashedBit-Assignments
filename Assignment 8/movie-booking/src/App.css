@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.movie-image {
+  width: 200px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease-in-out; 
+}
+
+.movie-image:hover {
+  transform: scale(1.05); 
+} 
+
+.movie-title {
+  font-size: 18px;
+  
+}
+
+.booking-summary {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 10px;
+  background-color: beige;
+  font-size: 18px;
+}
